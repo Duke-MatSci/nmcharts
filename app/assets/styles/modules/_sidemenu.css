@@ -1,0 +1,98 @@
+.sidemenu {
+    display: none;
+    @mixin clearfix {
+        
+    }
+    @mixin forTabLand {
+        z-index: 1000;
+        padding: 1rem;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 90%;
+        width: 35rem;
+        background-image: linear-gradient(
+            to left bottom,
+            rgba($lightPrimaryColor, 0.8),
+            rgba($darkPrimaryColor, .9)
+        );
+        border-radius: .18rem;
+        border-right: .2rem solid $lightPrimaryColor;
+        transition: width .8s ease-out;
+    }
+
+    @mixin forDesktop {
+        height: 75%;
+    }
+
+    @mixin forBigHeight {
+        height: 70% !important;
+    }
+
+    &-collapse {
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 2.8rem !important;
+        right: 0;
+        border-right: .3rem solid $lightPrimaryColor;
+    }
+
+    &_thumbnail {
+        cursor: pointer;
+        position: relative;
+        font-size: .8rem;
+        width: 46%;
+        height: 11.5rem;
+        background-image: linear-gradient(
+            to bottom right,
+            rgba($lightPrimaryColor, 0.8),
+            rgba($darkPrimaryColor, .9)
+        );
+        float: left;
+        border: .15rem solid $darkPrimaryColor;
+        margin-bottom: 4rem;
+        margin-right: 1rem;
+        transition: all .3s ease-out;
+
+        &-text {
+            padding: .1rem .2rem;
+            color: $texticons;
+        }
+
+        &:hover {
+            opacity: .6;
+            transform: scale(1.08);
+
+            .sidemenu_selected{
+                color: $primaryTextColor
+            }
+        }
+    }
+
+    &_selected {
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+        color: $accentColor;
+        font-weight: 600;
+    }
+}
+
+.button {
+    font-size: 1.2rem;
+    text-align: right;
+    color: $primaryColor;
+    cursor: pointer;
+    transform-origin: 60% 58%;
+    transition: transform .4s ease-out;
+    
+    
+
+    &-toggle {
+        transform: rotate(90deg);
+    }
+
+}

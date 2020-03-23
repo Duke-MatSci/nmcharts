@@ -1,0 +1,133 @@
+.row {
+    @mixin clearfix {
+
+    }
+
+    &--flex {
+        @mixin forTabPort {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+    &--gutter {
+        padding-right: -4.0625rem;
+
+        &-small {
+            padding-right: -2.45rem;
+        }
+
+        &-large {
+            padding-right: -5.45rem;
+        }
+        
+        &-2-col{
+            padding-right: -2.45rem;
+        }
+    }
+    &--gutter > div {
+        &:not(:last-child){
+            @mixin forTabLand {
+                padding-right: 4.0625rem;
+            }
+        }
+    }
+
+    &--gutter-small > div {
+        &:not(:last-child){
+            @mixin forTabLand {
+                padding-right: 2.45rem;
+            }
+        }
+    }
+
+    &--gutter-2-col > div {
+        &:not(:nth-child(2n+2)){
+            @mixin forTabLand {
+                padding-right: 2.45rem;
+            }
+        }
+    }
+
+    &--gutter-large > div {
+        &:not(:last-child){
+            @mixin forTabLand {
+                padding-right: 5.45rem;
+            }
+        }
+    }
+
+    &--insert-top-padding {
+        padding-top: 5.6rem;
+    }
+
+    &--spacing > div {
+        &:not(:last-child){
+            margin: 0 0 2rem 0;
+        }
+    }
+}
+
+.column-1-of-3 {
+    @mixin forTabLand {
+        float: left;
+        width: 33.3333%;
+    }
+
+    &--enlarge {
+        @mixin forTabLand {
+            width: 34%;
+        } 
+    }
+}
+.column-2-of-3 {
+    @mixin forTabLand {
+        float: left;
+        width: 66.6667%;
+    }
+
+    &--enlarge {
+        @mixin forTabLand {
+            width: 34%;
+        } 
+    }
+}
+
+.column-1-of-4 {
+    @mixin forTabLand {
+        float: left;
+        width: 25%;
+    }
+
+    &--enlarge {
+        @mixin forTabLand {
+            width: 29%;
+        } 
+    }
+}
+
+
+
+.column-2-of-4 {
+    @mixin forTabLand {
+        float: left;
+        width: 50%; 
+    }
+}
+
+.column-3-of-4 {
+    @mixin forTabLand {
+        float: left;
+        width: 75%; 
+    }
+
+    &--reduce {
+        @mixin forTabLand {
+            width: 71%;
+        }   
+    }
+}
