@@ -1,0 +1,45 @@
+.wrapper {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @mixin forTabLand {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        max-width: 95%;
+    }
+
+    &--header {
+        max-width: 97%;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin forTabLand {
+            padding-left: 1.1875rem;
+            padding-right: 1.1875rem;
+            max-width: 98%;
+        }
+    }
+}
+
+.u-margin-top {
+    margin-top: 1rem;
+}
+
+.u-margin-bottom {
+    margin-bottom: 4rem;
+}
+
+.u-opacity {
+    opacity: .4;
+}
+
+.u-hide {
+    display: none;
+    visibility: hidden;
+}
