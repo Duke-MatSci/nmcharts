@@ -1,0 +1,196 @@
+/* forPhone
+forTabPort
+forTabLand
+forDesktop
+forBigDesktop */
+
+.appbg {
+    margin-top: -18rem;
+    height: 40vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: -1;
+
+    @supports(clip-path:polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+        -webkit-clip-path: polygon(0 80%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 80%, 100% 0, 100% 100%, 0 100%);
+        background-image: linear-gradient(
+            to bottom right,
+            rgba($lightPrimaryColor, 0.8),
+            rgba($darkPrimaryColor, .9)
+        );
+    }
+
+    @mixin forTabLand {
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        margin-top: -6.8rem;
+        height: 25vh; 
+        width: 100%; 
+    }
+
+/*     @mixin forDesktop {
+        margin-top: -14rem;
+        height: 25vh;  
+    }
+
+    @mixin forBigHeight {
+        margin-top: -11rem;
+    } */
+}
+
+.heading {
+    margin-top: 1.8rem;
+    width: 100%;
+
+    &_container {
+        position: relative;
+        width: 100%;
+
+        & > ul {
+            display: none;
+            text-align: center;
+
+            @mixin forTabLand {
+                display: block;
+            }
+
+            @mixin clearfix {}
+
+            & > li {
+                margin-top: 1rem;
+                list-style: none;
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: 400;
+                cursor: pointer;
+
+                &:not(:last-child){
+                    padding-right: 3rem;
+                }
+
+                & > a {
+                    text-decoration: none;
+                    color: $primaryTextColor;
+                }
+
+                @mixin forDesktop {
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        &--logo {
+            position: relative;
+            width: 100%;
+
+            & > ul {
+                @mixin clearfix {}
+
+                & > li {
+                    list-style: none;
+                    display: inline-block;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: $primaryTextColor;
+                    vertical-align: middle;
+
+                    & > img {
+                        width: 5rem;
+                        height: 2.15rem;
+
+                        @mixin forDesktop {
+                            width: 6.6667rem;
+                            height: 2.8333rem;
+                        }
+                    }
+
+                    & > div {
+                        width: 14rem;
+                        @mixin forTabPort {
+                            width: 100% ;
+                        }
+                    }
+                    
+    
+                    &:not(:last-child){
+                        padding-right: .2rem;
+                    }
+
+
+                    @mixin forTabPort{
+                        font-size: 1.8rem;
+                    }
+
+                    @mixin forTabLand{
+                        font-size: 1.5rem;
+                    }
+    
+                    @mixin forDesktop {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &_icon{
+        height: 1.1rem;
+        width: 1.25rem;
+        position: absolute;
+        top: .5rem;
+        right: 2rem;
+        display: none;
+
+        @mixin forTabLand {
+            display: block;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 1.25rem;
+            height: .14rem;
+            background-color: $primaryColor;
+            transform-origin: 0 0;
+            transition: transform .4s ease-out;
+        }
+
+        &-menu {
+            position: absolute;
+            top: .5rem;
+            width: 1.75rem;
+            height: .14rem;
+            background-color: $primaryColor;
+            transition: all .4s ease-out;
+            transform-origin: 0 50%;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 1.25rem;
+            height: .14rem;
+            background-color: $primaryColor;
+            transform-origin: 0 50%;
+            transition: transform .4s ease-out;
+        }
+
+        &--toggle {
+            &::before {
+                transform: rotate(45deg) translateY(-1.5px) scale(1.5);
+                height: .09rem;
+            }
+
+            &::after {
+                transform: rotate(-45deg) scale(1.5);
+                height: .09rem;
+            }
+        }
+    }
+}
