@@ -4,7 +4,7 @@
 // => +Replace the data property with the following
 //     "data": {"values": this.data},
 
-class SchemaName {
+class MD20200323b {
     constructor(args) {
         this.data = args;
         this.events();
@@ -61,4 +61,4 @@ class SchemaName {
     }
 }
 
-export default SchemaName;
+export default MD20200323b;
