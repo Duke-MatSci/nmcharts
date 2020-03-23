@@ -1,0 +1,30 @@
+
+@define-mixin forPhone {
+  @media (max-width: 599px) { @mixin-content; }
+}
+@define-mixin forTabPort {
+  @media (min-width: 600px) { @mixin-content; }
+}
+@define-mixin forTabLand {
+  @media (min-width: 900px) { @mixin-content; }
+}
+@define-mixin forDesktop {
+  @media (min-width: 1200px) { @mixin-content; }
+}
+@define-mixin forBigDesktop {
+  @media (min-width: 1800px) { @mixin-content; }
+}
+@define-mixin forMedHeight {
+    @media (min-height: 1000px) { @mixin-content; }
+}
+@define-mixin forBigHeight {
+    @media (min-height: 1250px) { @mixin-content; }
+}
+
+@define-mixin clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
