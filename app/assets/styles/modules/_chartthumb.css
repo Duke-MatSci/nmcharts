@@ -1,0 +1,181 @@
+.main {
+    margin-top: 7.2%;
+    width: 100%;
+    height: 84%;
+    z-index: 999;
+
+    @mixin forTabLand {
+        height: 90%;
+        margin-top: 4%;
+    }
+
+    @mixin forDesktop {
+        margin-top: 2%;
+    }
+
+    &_thumb-descriptor {
+        line-height: 1.5;
+        margin-top: .5rem;
+        padding: .4rem;
+    }
+
+    &_thumb-container {
+        width: 99%;
+        background-color: $texticons;
+        z-index: 100;
+        padding: .2rem .2rem;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.1);
+        
+
+        @mixin forTabPort {
+            height: auto;
+        }
+
+        @mixin forTabLand {
+            height: auto;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        @mixin forDesktop {
+            width: 55%;
+        }
+    }
+
+    &_thumb-headertop {
+        width: 99%;
+        height: .12rem;
+        background-color: rgba($primaryColor, .6);
+
+        @mixin forTabLand {
+            height: .15rem;
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @mixin forDesktop {
+            width: 55%;
+        }
+    }
+
+    &_thumb-headerbottom {
+        position: relative;
+        width: 99%;
+        padding: .5rem .2rem .5rem 3.4rem;
+        font-size: .8rem;
+        font-weight: 300;
+        color: $texticons;
+        background-color: $darkPrimaryColor;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.1);
+
+        @mixin forTabPort {
+            font-size: .9rem;
+            z-index: 999;
+        }
+
+        @mixin forTabLand {
+            font-size: 1.2rem;
+            padding: .6rem 2rem .6rem .5rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        @mixin forDesktop {
+            width: 55%;
+            font-size: 1.5rem;
+        }
+    }
+
+    &_thumb-titleside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 4rem;
+        background-color: $accentColor;
+        @supports(clip-path:polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+            -webkit-clip-path: polygon(26% 100%, 59% 0, 48% 0, 14% 100%, 0 100%, 0 0, 100% 0);
+            clip-path: polygon(26% 100%, 59% 0, 48% 0, 14% 100%, 0 100%, 0 0, 100% 0);
+        }
+
+        @mixin forTabLand {
+            -webkit-clip-path: polygon(100% 100%, 41% 100%, 88% 0, 68% 0, 24% 100%, 0 0, 100% 0);
+            clip-path: polygon(100% 100%, 41% 100%, 88% 0, 68% 0, 24% 100%, 0 0, 100% 0);
+            left: auto;
+            right: 0;
+        }
+    }
+
+    &_pagination {
+        margin: 2rem 0 3.5rem 0;
+        transition: all .3s ease-out;
+        z-index: 2000;
+
+        @mixin forTabPort {
+            margin: 2rem 0 0 0;
+        }
+
+        @mixin forDesktop {
+            margin: 36rem 0 5rem 0;
+        }
+        & > ul {
+            text-align: center;
+
+            & > li {
+                list-style: none;
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: 400;
+                padding: 1rem 1rem;
+                border: .1rem solid $dividerColor;
+                
+
+                &.nav-btn {
+                    background-color: $lightPrimaryColor;
+                    cursor: pointer;
+
+                    &:hover,
+                    :active {
+                        color: $texticons;
+                        background-color: $accentColor;
+                    }
+                }
+
+                &.pager {
+                    background-color: $darkPrimaryColor;
+                    color: $texticons;
+                }
+            }
+        }
+    }
+}
+
+.marks {
+    zoom: .5;
+
+    @mixin forTabPort {
+        zoom: 1;
+    }
+}
+
+.vega_added_description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5rem .3rem;
+    width: 30%;
+    line-height: 1.3;
+    font-size: .8rem;
+
+    & > span {
+        display: block;
+        margin-bottom: .2rem;
+        font-weight: 700;
+        color: $accentColor;
+        font-size: 1rem;
+    }
+}
