@@ -104,7 +104,7 @@ class Desktop{
     fetchSchema(args){
         const title = document.querySelector(".v-chat-title");
         var arg = !args ? this.charts[0] : args;
-        fetch("/assets/scripts/"+arg.file, {mode: 'no-cors'})
+        fetch("assets/scripts/"+arg.file, {mode: 'no-cors'})
         .then(function(result){
             return result.text()
         }).then(function(data){
