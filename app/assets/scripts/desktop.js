@@ -37,6 +37,8 @@ class Desktop{
         if(current <= this.totalPages){
             this.currentPage = current;
             document.querySelector("#thumbnail-wrapper").innerHTML = '';
+            const pager = document.querySelector(".desktop-pager");
+            pager.innerHTML = "Page " + this.currentPage + " of " + this.totalPages;
             this.loadThumb();
         }
     }
@@ -46,6 +48,8 @@ class Desktop{
         if(current >= 1){
             this.currentPage = current;
             document.querySelector("#thumbnail-wrapper").innerHTML = '';
+            const pager = document.querySelector(".desktop-pager");
+            pager.innerHTML = "Page " + this.currentPage + " of " + this.totalPages;
             this.loadThumb();
         }
     }
@@ -88,7 +92,7 @@ class Desktop{
                 <div class="main_pagination">
                     <ul>
                         <li class="nav-btn" data-btn="navprev">Previous</li>
-                        <li class="pager">Page ${this.currentPage} of ${this.totalPages}</li>
+                        <li class="pager desktop-pager">Page ${this.currentPage} of ${this.totalPages}</li>
                         <li class="nav-btn" data-btn="navnext">Next</li>
                     </ul>
                 </div>
