@@ -11,7 +11,7 @@ class ChartDescription{
             `
             <div class="vega_added_description">
                 <span>Chart Description:</span>
-                ${this.descriptor}
+                <div class="vega-chart-descriptor">${this.descriptor}</div>
             </div>
             `
             )
