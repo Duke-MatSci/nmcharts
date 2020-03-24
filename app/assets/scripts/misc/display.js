@@ -92,13 +92,13 @@ class Display {
             },
             {
                 schema: tgheatmap,
-                thumb: "../schemas/nmcharts-Tg-heatmap/thumb.png",
+                thumb: "schemas/nmcharts-Tg-heatmap/thumb.png",
                 file: "schemas/nmcharts-Tg-heatmap/nano.json",
                 name: "Tg-Heatmap"
             },
             {
                 schema: electricconductivity,
-                thumb: "../schemas/nmcharts-electrical-conductivity-bar-chart/thumb.png",
+                thumb: "schemas/nmcharts-electrical-conductivity-bar-chart/thumb.png",
                 file: "schemas/nmcharts-electrical-conductivity-bar-chart/nano.json",
                 name: "Electrical Conductivity Bar Chart"
             },

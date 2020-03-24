@@ -82,7 +82,7 @@ class Mobile {
         const title = document.querySelector(".v-chat-title");
         const descriptor = document.querySelector(".v-descriptor");
         var arg = !args ? this.charts[0] : args;
-        fetch("/assets/scripts/"+arg.file, {mode: 'no-cors'})
+        fetch("assets/scripts/"+arg.file, {mode: 'no-cors'})
         .then(function(result){
             return result.text();
         }).then(function(data){
