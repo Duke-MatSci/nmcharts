@@ -127,7 +127,7 @@ class Desktop{
         const wrapper = document.querySelector("#thumbnail-wrapper");
         const htmlMarkUp = `
         <div class="sidemenu_thumbnail" data-thumb=${index}>
-            <img src="/assets/scripts//${el.thumb}" alt="${el.name}"/>
+            <img src="assets/scripts/${el.thumb}" alt="${el.name}"/>
             <div class="sidemenu_thumbnail-text">
                 ${el.name}
             </div>

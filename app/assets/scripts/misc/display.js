@@ -62,31 +62,31 @@ class Display {
         this.charts = [
             {
                 schema: aggregated,
-                thumb: "../schemas/nmcharts-aggregated-bar-chart/thumb.png",
+                thumb: "schemas/nmcharts-aggregated-bar-chart/thumb.png",
                 file: "schemas/nmcharts-aggregated-bar-chart/nano.json",
                 name: "Aggregated Bar Chart"
             },
             {
                 schema: conductivity,
-                thumb: "../schemas/nmcharts-conductivity-loading/thumb.png",
+                thumb: "schemas/nmcharts-conductivity-loading/thumb.png",
                 file: "schemas/nmcharts-conductivity-loading/nano.json",
                 name: "Conductivity"
             },
             {
                 schema: deltatg,
-                thumb: "../schemas/nmcharts-deltaTg-loading/thumb.png",
+                thumb: "schemas/nmcharts-deltaTg-loading/thumb.png",
                 file: "schemas/nmcharts-deltaTg-loading/nano.json",
                 name: "DeltaTg"
             },
             {
                 schema: dielectric,
-                thumb: "../schemas/nmcharts-dielectric-spectroscopy/thumb.png",
+                thumb: "schemas/nmcharts-dielectric-spectroscopy/thumb.png",
                 file: "schemas/nmcharts-dielectric-spectroscopy/Ning_dielectric.csv",
                 name: "Dielectric Spectroscopy"
             },
             {
                 schema: tgdensity,
-                thumb: "../schemas/nmcharts-Tg-density-plots/thumb.png",
+                thumb: "schemas/nmcharts-Tg-density-plots/thumb.png",
                 file: "schemas/nmcharts-Tg-density-plots/nano.json",
                 name: "Tg-Density Plots"
             },
