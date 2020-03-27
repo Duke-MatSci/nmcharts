@@ -63,10 +63,10 @@ class Display {
     addAllCharts() {
         this.charts = [
             {
-                schema: aggregated,
-                thumb: "schemas/nmcharts-aggregated-bar-chart/thumb.png",
-                file: "schemas/nmcharts-aggregated-bar-chart/nano.json",
-                name: "Aggregated Bar Chart"
+                schema: deltatgscatterplot,
+                thumb: "schemas/nmcharts-delta-Tg-scatter-plot/thumb.png",
+                file: "schemas/nmcharts-delta-Tg-scatter-plot/nano.json",
+                name: "Delta Tg Scatter Plot & Density Plot"
             },
             {
                 schema: conductivity,
@@ -111,10 +111,10 @@ class Display {
                 name: "Electrical Conductivity Linked Plots"
             },
             {
-                schema: deltatgscatterplot,
-                thumb: "schemas/nmcharts-delta-Tg-scatter-plot/thumb.png",
-                file: "schemas/nmcharts-delta-Tg-scatter-plot/nano.json",
-                name: "Delta Tg Scatter Plot & Density Plot"
+                schema: aggregated,
+                thumb: "schemas/nmcharts-aggregated-bar-chart/thumb.png",
+                file: "schemas/nmcharts-aggregated-bar-chart/nano.json",
+                name: "Aggregated Bar Chart"
             },
         ]
     }
