@@ -4,7 +4,7 @@
 // => +Replace the data property with the following
 //     "data": {"values": this.data},
 
-class MD20200327a {
+class MD20200323b {
     constructor(args) {
         this.data = args;
         this.events();
@@ -14,7 +14,8 @@ class MD20200327a {
         const returnSchema = {
           "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
           "description": "Example plot of NanoMine data.",
-          "data": {"values": this.data},
+          "data": {"values": [this.data]},
+          "autosize":"pad",
           "hconcat":[
             {
               "transform": [
@@ -60,4 +61,4 @@ class MD20200327a {
     }
 }
 
-export default MD20200327a;
+export default MD20200323b;

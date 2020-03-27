@@ -83,7 +83,7 @@ class Display {
             {
                 schema: dielectric,
                 thumb: "schemas/nmcharts-dielectric-spectroscopy/thumb.png",
-                file: "schemas/nmcharts-dielectric-spectroscopy/Ning_dielectric.csv",
+                file: "schemas/nmcharts-dielectric-spectroscopy/nano.json",
                 name: "Dielectric Spectroscopy"
             },
             {
