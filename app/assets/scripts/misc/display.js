@@ -6,6 +6,7 @@ import tgdensity from '../schemas/nmcharts-Tg-density-plots/schema-template';
 import tgheatmap from '../schemas/nmcharts-Tg-heatmap/schema-template';
 import electricconductivity from '../schemas/nmcharts-electrical-conductivity-bar-chart/schema-template';
 import electricconductivitylinkedplot from '../schemas/nmcharts-electrical-conductivity-linked-plots/schema-template';
+import deltatgscatterplot from '../schemas/nmcharts-delta-Tg-scatter-plot/schema-template';
 import Mobile from '../mobile';
 import Desktop from '../desktop';
 
@@ -104,30 +105,19 @@ class Display {
                 name: "Electrical Conductivity Bar Chart"
             },
             {
-                schema: electricconductivity,
-                thumb: "schemas/nmcharts-electrical-conductivity-bar-chart/thumb.png",
-                file: "schemas/nmcharts-electrical-conductivity-bar-chart/nano.json",
-                name: "Electrical Conductivity Bar Chart"
+                schema: electricconductivitylinkedplot,
+                thumb: "schemas/nmcharts-electrical-conductivity-linked-plots/thumb.png",
+                file: "schemas/nmcharts-electrical-conductivity-linked-plots/nano.json",
+                name: "Electrical Conductivity Linked Plots"
+            },
+            {
+                schema: deltatgscatterplot,
+                thumb: "schemas/nmcharts-delta-Tg-scatter-plot/thumb.png",
+                file: "schemas/nmcharts-delta-Tg-scatter-plot/nano.json",
+                name: "Delta Tg Scatter Plot & Density Plot"
             },
         ]
     }
-
-    // fetchSchema(){
-    //     var myargs = this;
-    //     fetch('assets/files/nano.json', {mode: 'no-cors'})
-    //     .then(function(result){
-    //         return result.text()
-    //     }).then(function(data){
-    //         const vsc = new VSchema(JSON.parse(data))
-    //         return vsc.events();
-    //     }).then(function(processedSchema){
-    //         if(myargs.displaySize < 900){
-    //             return vegaEmbed('#vis', processedSchema);
-    //         }
-    //         vegaEmbed('#vis', processedSchema);
-    //         return new ChartDescription(processedSchema.usermeta.description);
-    //     })
-    // }
 
     initialize(){
         if(this.displaySize < 900){
