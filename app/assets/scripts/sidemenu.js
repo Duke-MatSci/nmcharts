@@ -1,7 +1,8 @@
 class SideMenu {
     constructor(){
+        this.wrapper = document.querySelector("#thumbnail-wrapper");
         this.icon = document.querySelector("#sidebar-icon");
-        this.sideBarItems = document.querySelectorAll(".sidemenu_thumbnail");
+        // this.sideBarItems = document.querySelectorAll(".sidemenu_thumbnail");
         this.bar = document.querySelector(".sidemenu ");
         this.pagination = document.querySelector(".main_pagination");
         this.collapsed = document.querySelector("sidemenu-collapse");
@@ -17,9 +18,10 @@ class SideMenu {
         if(ev){
             ev.preventDefault();
         }
-        this.sideBarItems.forEach(function(el){
-            el.classList.toggle("u-hide");
-        });
+        // this.sideBarItems.forEach(function(el){
+        //     el.classList.toggle("u-hide");
+        // });
+        this.wrapper.classList.toggle("u-hide");
         this.icon.innerHTML == "Hide Bar" ? this.icon.innerHTML = "More..." : this.icon.innerHTML = "Hide Bar";
         this.bar.classList.toggle("sidemenu-collapse");
         this.icon.classList.toggle("button-toggle");
