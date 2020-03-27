@@ -5,6 +5,7 @@ import dielectric from '../schemas/nmcharts-dielectric-spectroscopy/schema-templ
 import tgdensity from '../schemas/nmcharts-Tg-density-plots/schema-template';
 import tgheatmap from '../schemas/nmcharts-Tg-heatmap/schema-template';
 import electricconductivity from '../schemas/nmcharts-electrical-conductivity-bar-chart/schema-template';
+import electricconductivitylinkedplot from '../schemas/nmcharts-electrical-conductivity-linked-plots/schema-template';
 import Mobile from '../mobile';
 import Desktop from '../desktop';
 
@@ -95,6 +96,12 @@ class Display {
                 thumb: "schemas/nmcharts-Tg-heatmap/thumb.png",
                 file: "schemas/nmcharts-Tg-heatmap/nano.json",
                 name: "Tg-Heatmap"
+            },
+            {
+                schema: electricconductivity,
+                thumb: "schemas/nmcharts-electrical-conductivity-bar-chart/thumb.png",
+                file: "schemas/nmcharts-electrical-conductivity-bar-chart/nano.json",
+                name: "Electrical Conductivity Bar Chart"
             },
             {
                 schema: electricconductivity,
