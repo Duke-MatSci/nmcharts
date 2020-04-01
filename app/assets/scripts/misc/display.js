@@ -63,11 +63,17 @@ class Display {
 
     addAllCharts() {
         this.charts = [
+            // {
+            //     schema: deltatgscatterplot,
+            //     thumb: "schemas/nmcharts-delta-Tg-scatter-plot/thumb.png",
+            //     file: "schemas/nmcharts-delta-Tg-scatter-plot/nano.json",
+            //     name: "Delta Tg Scatter Plot & Density Plot"
+            // },
             {
-                schema: deltatgscatterplot,
-                thumb: "schemas/nmcharts-delta-Tg-scatter-plot/thumb.png",
-                file: "schemas/nmcharts-delta-Tg-scatter-plot/nano.json",
-                name: "Delta Tg Scatter Plot & Density Plot"
+                schema: deltatg,
+                thumb: "schemas/nmcharts-deltaTg-loading/thumb.png",
+                file: "schemas/nmcharts-deltaTg-loading/nano.json",
+                name: "DeltaTg"
             },
             {
                 schema: electricconductivitylinkedplot,
@@ -92,12 +98,6 @@ class Display {
                 thumb: "schemas/nmcharts-conductivity-loading/thumb.png",
                 file: "schemas/nmcharts-conductivity-loading/nano.json",
                 name: "Conductivity"
-            },
-            {
-                schema: deltatg,
-                thumb: "schemas/nmcharts-deltaTg-loading/thumb.png",
-                file: "schemas/nmcharts-deltaTg-loading/nano.json",
-                name: "DeltaTg"
             },
             {
                 schema: tgdensity,
