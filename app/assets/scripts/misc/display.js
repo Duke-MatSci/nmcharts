@@ -7,6 +7,7 @@ import tgheatmap from '../schemas/nmcharts-Tg-heatmap/schema-template';
 import electricconductivity from '../schemas/nmcharts-electrical-conductivity-bar-chart/schema-template';
 import electricconductivitylinkedplot from '../schemas/nmcharts-electrical-conductivity-linked-plots/schema-template';
 import deltatgscatterplot from '../schemas/nmcharts-delta-Tg-scatter-plot/schema-template';
+import rheologyplot from '../schemas/nmcharts-rheology-benes/schema-template';
 import Mobile from '../mobile';
 import Desktop from '../desktop';
 
@@ -69,6 +70,24 @@ class Display {
                 name: "Delta Tg Scatter Plot & Density Plot"
             },
             {
+                schema: electricconductivitylinkedplot,
+                thumb: "schemas/nmcharts-electrical-conductivity-linked-plots/thumb.png",
+                file: "schemas/nmcharts-electrical-conductivity-linked-plots/nano.json",
+                name: "Electrical Conductivity Linked Plots"
+            },
+            {
+                schema: rheologyplot,
+                thumb: "schemas/nmcharts-rheology-benes/thumb.png",
+                file: "schemas/nmcharts-rheology-benes/nano.json",
+                name: "Interactive Rheology Data"
+            },
+            {
+                schema: dielectric,
+                thumb: "schemas/nmcharts-dielectric-spectroscopy/thumb.png",
+                file: "schemas/nmcharts-dielectric-spectroscopy/nano.json",
+                name: "Dielectric Spectroscopy"
+            },
+            {
                 schema: conductivity,
                 thumb: "schemas/nmcharts-conductivity-loading/thumb.png",
                 file: "schemas/nmcharts-conductivity-loading/nano.json",
@@ -79,12 +98,6 @@ class Display {
                 thumb: "schemas/nmcharts-deltaTg-loading/thumb.png",
                 file: "schemas/nmcharts-deltaTg-loading/nano.json",
                 name: "DeltaTg"
-            },
-            {
-                schema: dielectric,
-                thumb: "schemas/nmcharts-dielectric-spectroscopy/thumb.png",
-                file: "schemas/nmcharts-dielectric-spectroscopy/nano.json",
-                name: "Dielectric Spectroscopy"
             },
             {
                 schema: tgdensity,
@@ -103,12 +116,6 @@ class Display {
                 thumb: "schemas/nmcharts-electrical-conductivity-bar-chart/thumb.png",
                 file: "schemas/nmcharts-electrical-conductivity-bar-chart/nano.json",
                 name: "Electrical Conductivity Bar Chart"
-            },
-            {
-                schema: electricconductivitylinkedplot,
-                thumb: "schemas/nmcharts-electrical-conductivity-linked-plots/thumb.png",
-                file: "schemas/nmcharts-electrical-conductivity-linked-plots/nano.json",
-                name: "Electrical Conductivity Linked Plots"
             },
             {
                 schema: aggregated,
