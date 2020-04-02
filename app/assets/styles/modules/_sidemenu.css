@@ -89,7 +89,7 @@
 .button {
     font-size: 1.2rem;
     text-align: right;
-    color: $primaryColor;
+    color: $primaryTextColor;
     cursor: pointer;
     transform-origin: 60% 58%;
     transition: transform .4s ease-out;

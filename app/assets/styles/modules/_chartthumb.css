@@ -6,11 +6,11 @@
 
     @mixin forTabLand {
         height: 90%;
-        margin-top: 4%;
+        margin-top: 3.4%;
     }
 
     @mixin forDesktop {
-        margin-top: 2%;
+        margin-top: 1.8%;
     }
 
     &_thumb-descriptor {
