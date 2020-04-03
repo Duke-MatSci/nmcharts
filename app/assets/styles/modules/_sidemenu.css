@@ -8,7 +8,7 @@
         padding: 1rem;
         display: block;
         position: absolute;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         left: 0;
         height: 90%;
@@ -32,7 +32,7 @@
     }
 
     &-collapse {
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         cursor: pointer;
         width: 2.8rem !important;
